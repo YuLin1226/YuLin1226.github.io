@@ -1,0 +1,52 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+    <style>
+        .project-header {
+            background-size: cover;
+            background-position: center;
+            padding: 150px 0;
+            color: white;
+            text-align: center;
+        }
+        .project-header h1 {
+            font-size: 3em;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .project-content {
+            padding: 40px 20px;
+            background: #fff;
+            margin-top: -50px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    {% include nav.html %}
+    <header class="project-header" style="background-image: url('{{ page.image | prepend: site.baseurl }}');">
+        <div class="wrapper animated fadeIn">
+            <h1>{{ page.title }}</h1>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="content project-content animated fadeInUp">
+            {{ content }}
+            <div class="entry-meta">
+                <a class="btn zoombtn" href="{{site.url}}/projects/">
+                    <i class="fa fa-chevron-left"></i> Back to Projects
+                </a>
+            </div>
+        </div>
+    </div>
+    {% include scripts.html %}
+</body>
+</html>
