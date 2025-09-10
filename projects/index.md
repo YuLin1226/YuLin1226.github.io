@@ -1,5 +1,5 @@
 ---
-layout: project
+layout: gallery
 title: All Projects
 excerpt: "A List of Projects"
 comments: false
