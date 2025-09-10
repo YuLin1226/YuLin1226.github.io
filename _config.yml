@@ -1,7 +1,9 @@
 # Site
 title:              Ryan Chen
 bio:                'I have no idea waht to say now.'
-description:        "This part should describe something about me."
+description:        |
+  ME B.S. NTU
+  ME M.S. NTU
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/logo.png'
